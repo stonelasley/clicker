@@ -10,5 +10,5 @@ export class TranslateServiceMock {
   public use(value: any): void {}
   public set(lang: string): void {}
   public setDefaultLang(lang: string): void {}
- /* tslint:enable */
+  /* tslint:enable */
 }

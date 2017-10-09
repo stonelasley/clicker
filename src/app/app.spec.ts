@@ -1,15 +1,15 @@
-import { ClickerApp }                      from './app.component';
 import { MenuMock, NavMock, PlatformMock, StatusBarMock, SplashScreenMock } from 'ionic-mocks';
-import { TranslateServiceMock }              from '../services/translate.mock';
-import { Page2 }                           from '../pages';
+import { TranslateServiceMock } from '../common/services/mocks';
+import { Page2 }                from '../common/pages';
+import { App }                  from './app.component';
 
-let instance: ClickerApp = null;
+let instance: App = null;
 
-describe('ClickerApp', () => {
+describe('App', () => {
 
   beforeEach(() => {
     let translate: any = new TranslateServiceMock();
-    instance = new ClickerApp((<any> PlatformMock.instance()), (<any> MenuMock.instance()),
+    instance = new App((<any> PlatformMock.instance()), (<any> MenuMock.instance()),
       (<any>SplashScreenMock.instance()), (<any>StatusBarMock.instance()), translate);
     instance['nav'] = NavMock.instance();
   });

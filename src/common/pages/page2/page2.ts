@@ -1,5 +1,3 @@
-'use strict';
-
 import { Component } from '@angular/core';
 import { Alert, AlertController } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';

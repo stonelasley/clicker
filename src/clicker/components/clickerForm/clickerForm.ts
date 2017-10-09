@@ -1,5 +1,3 @@
-'use strict';
-
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component }                          from '@angular/core';
 import { ClickersService }                    from '../../services';

@@ -3,12 +3,13 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { TranslateService }              from '@ngx-translate/core';
 import { StatusBar }                     from '@ionic-native/status-bar';
 import { SplashScreen }                  from '@ionic-native/splash-screen';
-import { ClickerList, Page2 }            from '../pages';
+import { ClickerList }                   from '../clicker';
+import { Page2 }                         from '../common';
 
 @Component({
   templateUrl: './app.html',
 })
-export class ClickerApp {
+export class App {
 
   @ViewChild(Nav) public nav: Nav;
 
